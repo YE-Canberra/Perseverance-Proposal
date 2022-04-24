@@ -2,15 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="img/png" href="./res/img/YE-logo.webp">
+    <link rel="icon" type="img/png" href="./res/img/YE_logo.webp">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="./css/ol.css">
     <link rel="stylesheet" type="text/css" href="./css/timeline.css">
-    <link rel="stylesheet" type="text/css" href="./css/costingList.css">
+    <link rel="stylesheet" type="text/css" href="./css/budget.css">
+
+<!--
+
+    <script src="js/budget.js"></script>
+
     <script src="js/THREE/three.js"></script>
     <script src="js/THREE/GLTFLoader.js"></script>
     <script src="js/THREE/DRACOLoader.js"></script>
     <script src="js/THREE/OrbitControls.js"></script>
+-->
   </head>
   <body>
 
@@ -25,34 +31,44 @@
 
     <div class="page firstPage">
       <div class="horizontalBox bannerBox">
-	<img class="banner CDSCCBanner" src="./res/img/CDSCC-banner.webp">
-	<img class="banner" src="./res/img/YE-banner.webp">
+	<div class="NASABACK">
+	<img class="banner CDSCCBanner" src="./res/img/CDSCC_banner.webp">
+</div>
+	<img class="banner YEBanner" src="./res/img/YE_banner.webp">
       </div>
+<!--
       <div class="horizontalBox">
 	<h2>for <span class="name">Canberra Deep Space Communication Complex</span></h2>
 	<h2>by <span class="name">Young Engineers Canberra</span></h2>
       </div>
+-->
 <br><br><br>
-	<ol class="responsiveList">
+	<ol class="contentsList">
 	  <li><a href="#ExecutiveSummary">Executive Summary</a></li>
 	  <li><a href="#OurCompany">Our Company</a></li>
 	  <li><a href="#ProjectOutline">Project Outline</a>
 	    <ol>
-	      <li>Deliverables</li>
-	      <li>Manufacture</li>
-	      <li>Teaching</li>
-	      <li>Marketing & PR</li>
+	      <li><a href="#Deliverables">Deliverables</a></li>
+	      <li><a href="#Manufacture">Manufacture</a></li>
+	      <li><a href="#EducationProgram">Education Program<!--&Community Engagement--></a></li>
+	      <li><a href="#Marketing&PR">Marketing & PR</a></li>
 	    </ol>
 	  </li>
-	  <li><a href="#Timeline">Timeline & Milestones</a></li>
+	  <li><a href="#Timeline">Timeline</a>
+	    <ol>
+	      <li><a href="#Milestones">Milestones</a></li>
+	    </ol>
+	  </li>
 	  <li><a href="#Budget">Budget</a>
 	    <ol>
-	      <li>Manufacture</li>
-	      <li>Labour</li>
-	      <li>Marketing & PR</li>
+	      <li><a href="#BudgetManufacture">Manufacture</a></li>
+	      <li><a href="#BudgetLabour">Labour</a></li>
+	      <li><a href="#BudgetMarketing">Marketing & PR</a></li>
 	    </ol>
 	  </li>
 	  <li><a href="#BeyondPerseverance">Beyond Perseverance</a></li>
+	  <li><a href="#Conclusion">Conclusion</a></li>
+	  <li><a href="#AppendixA">Appendix A</a></li>
 	</ol>
 <br><br><br>
 <br><br><br>
@@ -65,72 +81,206 @@
 
     <div id="OurCompany" class="page">
       <h1>Our Company</h1>
+	<br><p>Young Engineers-Canberra is a part of the global STEM education provider, e² Young Engineers that has been operating over 50 countries since 2008. We specialise in providing innovative STEM programs to school-aged children. Our programs are designed to enrich the students’ knowledge in STEM through the use of K’nex®, LEGO® bricks, electronics, coding and robotics techniques making it possible for the students to understand and solve a problem by practical application of theoretical concepts. We follow an inquiry-based pedagogical learning philosophy which allow children to work with project-based and problem-based lessons.</p>
+	<br><p>Young Engineers-Canberra mainly delivers our programs through school incursions, after-school clubs, holiday camps and other specialised programs. We proactively collaborate with universities, industry associations and other STEM providers to ensure our programs are relevant and leading-edge.</p>
+	<br><p>Our vision is to create the next generation of creators, innovators, and problem solvers. We aim to make a tangible difference to the children of today by giving them 21st century skills for a lifetime of success.</p>
+	<br><p>Currently we operate in 18 primary schools with our regular after-school STEM program during the school terms in the ACT and Queanbeyan area. Since the inception of our Young Engineers franchise in 2019 in the ACT, we have served over 3000 students across different programs. Furthermore, our company have also received government grants to promote STEM education in the underprivileged community sectors in the ACT. Whilst the global pandemic decelerated our expansion strategy for a period of time in year 2021, with our focus on learning, adapting and reinventing, we have been able to rise to the occasion in these challenging circumstances and steering our way back to our mission of making our STEM programs available to every primary and secondary school student in the ACT.</p>
     </div>
 
-    <div id="ProjectOutline" class="page">
+    <div id="ProjectOutline" class="page PO">
       <h1>Project Outline</h1>
+<!-- Ishni wants removed
+	<h2>Project Title:</h2><h2>&emsp;<em>Replica of Mars Perseverance Rover</em></h2>
+-->
+	<h2>Scope</h2>
+	    <p>Canberra Deep Space Communication Complex (CDSCC) will appoint Young Engineers-Canberra (YE CBR) to manage the project of building a replica of the Mars Perseverance Rover to be displayed at the CDSCC. YE CBR plan to deliver an education program around the construction of the robot, to a selected group of high school students in the ACT. This program will be designed to educate the students on space exploration, aeronautics, design process, challenges and robotics aspects of the Mars Perseverance Rover while in real-time assembling the rover together over a period of time. In addition, our company will provide assistance in managing the advertising, marketing and public relations of the project to create awareness and promote the project to the school communities and public.</p>
+    </div>
+
+
+    <div id="Deliverables" class="page PO">
+      <h2 class="grey">Project Outline</h2>
 	<h2>Deliverables</h2>
+	    <p>Detailed below are the project deliverables to agree on:</p>
+		<ol>
+		    <li>YE CBR will build a quater-scale replica of the Mars Rover, Perseverance, with the following functionalities to be displayed at the CDSCC:
+			<ol>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			</ol>
+		    </li>
+		    <li>The possible additions to this model are:
+			<ol>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			</ol>
+		    </li>
+		    <li>The <strong>Perseverance Mechatronics Program</strong>. YE CBR will:
+			<ol>
+			    <li>Design an education program to cater to students of Year 7 to 8 to learn about...</li>
+			    <li>Select a diverse group of 12 to 15 students to take part in the program.</li>
+			    <li>Deliver the program within the proposed timelines</li>
+			</ol>
+		    </li>
+		    <li>Manage the marketing and public relation campaign of the project in coordination with the CDSCC.</li>
+		    <li>What happens next (see <a href="#BeyondPerseverance">Beyond Perseverance</a>)</li>
+		</ol>
+    </div>
+    <div id="Manufacture" class="page PO">
+      <h1 class="grey">Project Outline</h1>
 	<h2>Manufacture</h2>
-	<h2>Teaching</h2>
+    </div>
+    <div id="EducationProgram" class="page PO">
+      <h1 class="grey">Project Outline</h1>
+	<h2>Education Program</h2>
+
+	<h2>Program Scope</h2>
+	<p>In line with the CDSCC’s goals for educating school students about the planets, the story of space travel; and how deep space network communicate with and benefit from spacecraft exploring our Solar System and beyond, our program will be designed to learn about space exploration and take a step further to learn engineering and technology behind the spacecrafts. This unique program will be designed to learn and investigate theoretical concepts in space engineering and technology while working on assembling the replica of the Mars Rover Perseverance.</p>
+	<p>Outlined below are the benefits of the program to different stakeholders:</p>
+
+	<h3>To CDSCC/CSIRO/NASA</h3>
+	    <ol>
+		<li>Promote educational ventures in deep space networks/exploration to school students as part of the education and outreach programs of CDSCC and NASA.</li>
+		<li>Strengthen collaborations between industry and classrooms in STEM education.</li>
+		<li>Increase STEM engagement by inspiring students to pursue further education in STEM especially the under-represented social groups such as female students and indigenous communities.</li>
+		<li>Provide opportunities to the schools to equip the emerging workforce with 21st century skill sets.</li>
+	    </ol>
+
+	<h3>To Young Engineers Canberra:</h3>
+	    <ol>
+		<li>Venture into creative and transformative learning opportunities to provide innovative STEM programs for the students.</li>
+		<li>Create awareness and promote Young Engineers STEM programs in the ACT for more schools and students to take advantage of the programs we offer.</li>
+		<li>Become a facilitator between schools and industry partners to collaborate in bringing new immersive educational programs for the students to bridge the learning gaps in STEM beyond the school curriculum.</li>
+		<li>Strengthen our company’s efforts to become a valuable partner to the community at large of ACT.</li>
+	    </ol>
+
+	<h3>To Students:</h3>
+	    <ol>
+		<li>Opportunity to be part of an inspiring and unique STEM project that will enhance the scientific and digital literacy of students.</li>
+		<li>Inspire the students to focus on skills of the future such as problem-solving, critical thinking and exploratory learning that fuel success across a variety of tasks and disciplines.</li>
+		<li>Instill a passion in innovation by engaging students in a project that has real-life applications to science as a human endeavor.</li>
+		<li>Enhance skills in project management and collaboration.</li>
+		<li>Provide the confidence and skills to choose a STEM education path and career in the future.</li>
+	    </ol>
+
+	<h3>To ACT Schools and the Community at Large:</h3>
+	    <ol>
+		<li>Industry partnerships will aid to bridge knowledge and expertise gaps in STEM education in schools.</li>
+		<li>Offer students access to more opportunities and resources to explore their interest and curiosity in STEM education and career pathways.</li>
+		<li>Adopt innovative avenues to teaching and learning by seeking industry partnerships to provide contemporary and internationally competitive STEM education in schools.</li>
+		<li>School-industry partnerships will benefit our national goals in achieving a highly capable future workforce.</li>
+	    </ol>
+
+	<h2>Program Methodology</h2>
+	    <p>Our main objective of this program is to engage the ACT high schools and community to take part in creating a remarkable educational experience and venture that will serve the many benefits that had been outlined above to all stakeholders. In line with that objective, we have identified below the key outcomes, selecting students for the program, our learning philosophy and program delivery.</p>
+		<ol>
+		    <li>Learning Outcomes
+			<ol>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			    <li></li>
+			</ol>
+		    </li>
+		    <li>Student Group Selection<br>
+			The group size of the students is limited maximum of 15 students. We intend to reach out to all the ACT High Schools to provide us with an expression of interest of the students. YE CBR will select students based on our selection criteria. In line with our objective to increase participation of the underrepresented community groups, we intend to aim for below provisions within the selected group.
+			<ol>
+			    <li>50% female participation in the group.</li>
+			    <li>Select students from Indigenous communities.</li>
+			    <li>Allocate places for low socio-income communities.</li>
+			</ol>
+			These special selections will be decided based on the number of applications we receive from each of these community groups.
+		    </li>
+		    <li>Our Learning Philosophy
+			<p>Young Engineers continuously strive to reimagine the ways our students can learn effectively through our programs. Whilst we teach our students the skills of the 21st Century, we recognize that our teaching delivery needs to constantly evolve and adapt to demands of the future to deliver our promise of learning. We firmly believe our students learning experience can be optimized by engaging in innovative inquiry-based learning endeavors. Our learning methodology as depicted below guide us through the process of discovering new knowledge or obtaining a deeper understanding of what we already know through experiential learning.</p>
+			<div class="imgBox">
+			  <img src="./res/img/learning_philosophy.webp" alt="Learning Philosophy Infographic: Imagine, Explore, Make, Think, Know"/>
+			</div>
+		    </li>
+		    <li>Program Delivery
+			<p>Program is aimed at being delivered in phases over a course of a school term, preferably in Term 3 of 2022. The course outline will be taught during the 10 weeks.<br>...TBD!</p>
+		    </li>
+		</ol>
+    </div>
+    <div id="Marketing&PR" class="page PO">
+      <h1 class="grey">Project Outline</h1>
 	<h2>Marketing & PR</h2>
+	<p>Our Marketing & PR plan can be found in <a href="#AppendixA">Appendix A</a>.</p>
+<!--
+<p>The Marketing & PR budget has not been allocated here. This is due to its dependence on budget.
+<br>Since these possibilities are very much dependent on the budget, further collaboration</p>
+-->
     </div>
 
     <div id="Timeline" class="page timelinePage">
       <h1>Timeline</h1>
       <div class="timeline">
-	<p><strong>Order</strong> Parts<span>10<sup>th</sup>- 15<sup>th</sup>May</span></p>
-	<p><strong>Recieve</strong> Parts<span>End of June</span></p>
-	<p>Assemble <strong>Working Model</strong><span>July</span></p>
-	<p>Finalise <strong>Lesson Plans</strong><span>July</span></p>
-	<p>Teach and Assemble with <strong>Student-Involvement</strong><span>Term 3 including Holidays</span></p>
+	<p><strong>Order</strong> Parts<span>Mid-May</span></p>
+	<p><strong>Recieve</strong> Parts<span>Mid-July</span></p>
+	<p>Assemble <strong>Working Model</strong><span>July-August</span></p>
+	<p>Finalise <strong>Lesson Plans</strong><span>July-August</span></p>
+	<p>Teach and Assemble with <strong>Student-Involvement</strong><span>Term 3 Holidays</span></p>
 	<p><strong>Official Release</strong> at CDSCC<span>October</span></p>
 
 	<!-- color coded for assembly&teaching || PR&Marketing -->
       </div>
+	<p class="asterisk">*These dates are a guideline and are subject to approval</p>
+    </div>
+
+    <div id="Milestones" class="page">
+      <h1 class="grey">Timeline</h1>
+	<h2>Milestones</h2>
+	<p>Below is a list of milestones.<br>These are points throughout the project where CDSCC will be directly involved in the process.</p>
+	<ol>
+	  <li>Budget Approval - by Mid-May</li>
+	  <li>Working Model</li>
+	  <li>Begin the Mechatronics Program</li>
+	  <li>Launch</li>
+	</ol>
     </div>
 
     <div id="Budget" class="page">
       <h1>Budget</h1>
-	<h2>Manufacture</h2>
+	<h2 id="BudgetManufacture">Manufacture</h2>
 
-      <table class="costingTable">
-	<tr>
+      <table class="budgetTable">
+	<tr class="budgetTitle">
 	  <td>Manufacture</td>
-<td></td>
 	</tr>
-	<tr>
-	  <td>&emsp;Perseverance</td>
-<td></td>
+	<tr class="budgetSubtitle">
+	  <td>Perseverance</td>
 	</tr>
-	<tr>
+	<tr class="pricedItem firstDollar">
 	  <td>3D-Printed Parts</td>
-	  <td><span style="position:absolute; left:80%">$</span>13,000</td>
+	  <td>13,000</td>
 	</tr>
-	<tr>
+	<tr class="pricedItem">
 	  <td>Electronics</td>
 	  <td>300</td>
 	</tr>
-	<tr>
+	<tr class="pricedItem">
 	  <td>Other Hardware</td>
 	  <td>1,500</td>
 	</tr>
-	<tr>
+	<tr class="pricedItem">
 	  <td>3D-Printed Parts</td>
 	  <td>13,000</td>
 	</tr>
-	<tr>
+	<tr class="pricedItem">
 	  <td>3D-Printed Parts</td>
 	  <td>13,000</td>
 	</tr>
-	<tr>
-	  <td>3D-Printed Parts</td>
-	  <td>13,000</td>
+	<tr class="subtotal">
+	  <td>Perseverance Total</td>
+	  <td>1234959</td>
 	</tr>
-
       </table>
 
-	<h2>Labour</h2>
-	<h2>Marketing & PR</h2>
+	<h2 id="BudgetLabour">Labour</h2>
+	<h2 id="BudgetMarketing">Marketing & PR</h2>
     </div>
 
     <div id="BeyondPerseverance" class="page">
@@ -141,18 +291,77 @@
 <li>We offer a course + affiliation with you guys</li>
 <li>Further collaboration</li>
 </ul>
-<h3>If there are any queries, we are open to discussion as to how we can make this possible.</h3>
     </div>
 
+    <div id="Conclusion" class="page">
+	<h1>Conclusion</h1>
+	<p>We hope that we've provided sufficient information for you review.<br>We will are eagerly awaiting your reply</p>
+	<h3>If there are any queries, we are open to discussion as to how we can make this possible.</h3>
+    </div>
+
+    <div id="AppendixA" class="page">
+	<h1>Appendix A</h1>
+	<h2>This section contains a detailed marketing plan:</h2>
+
+<h2>Marketing Objectives</h2>
+  <ol>
+    <li>Building the awareness of new Mars Rover Replica within Australia</li>
+    <li>Driving engagement and consideration</li>
+    <li>Encourage conversions (enquiries/more information/visits/enroll for the program)</li>
+    <li>Support the government policy of promoting stem studies within Australia</li>
+  </ol>
+<h2>Target Audience</h2>
+  <img src="./res/img/marketing_proposal/target_audience.webp" alt="" />
+<h2>Daily Time Spent on Media by Audience</h2>
+  <img src="./res/img/marketing_proposal/media_usage1.webp" alt="" />
+<h2>Digital Media Use by Audience</h2>
+  <img src="./res/img/marketing_proposal/media_usage2.webp" alt="" />
+<h2>Media Objectives</h2>
+  <img src="./res/img/marketing_proposal/media_objectives.webp" alt="" />
+<h2>Four-Phase Campaign</h2>
+  <img src="./res/img/marketing_proposal/phases.webp" alt="" />
+<h2>Platform Selection</h2>
+  <img src="./res/img/marketing_proposal/platform_selection.webp" alt="" />
+<h2>Funnelling the Audience to Drive Conversion</h2>
+  <img src="./res/img/marketing_proposal/funnelling_audience.webp" alt="" />
+<h2>Pre-Launch</h2>
+  <ol>
+    <li>Pre-launch need to planned at least 3 weeks prior to the launch to create maximum buzz for the launch event</li>
+    <li>Recommended to have a series of content on social to create a curiosity and excitement  prior to the launch</li>
+    <li>Invite Influencers to create short clips to create a buzz around the launch</li>
+  </ol>
+<h2>Launch Phase</h2>
+  <ol>
+    <li>Organize a press conference / get electronic, print and digital media to cover the launch</li>
+    <li>Invite space influencers to share FB live updates on their feed</li>
+    <li>Fb Live update on the Young Engineers page and NASA page</li>
+    <li>Create content on social media to announce the launch of Mars Rover Replica and program module</li>
+    <li>Run an early bird promotion to the schools to encourage more visits</li>
+  </ol>
+<h2>Post Event Coverage</h2>
+  <ol>
+    <li>Issue PR articles to print and digital media to get the maximum free publicity for the event</li>
+    <li>Invite influencers to share their experiences and reviews on social media  and invite others to visit and share their experience</li>
+    <li>Share behind the scene video on YouTube create interest to visit</li>
+  </ol>
+<h2>Sustenance Phase</h2>
+  <ol>
+    <li>Use social media to sustain the campaign for at least for 3 months to maintain top of mind awareness</li>
+    <li>Retarget the interested audience via social media, LinkedIn and email to encourage visits and enroll for the program</li>
+  </ol>
+    </div>
+
+<!--	3D Stuff
     <div class="page">
       <div class="stage">
 	<canvas id="c"></canvas>
       </div>
-      <table id="costingTable"></table>
     </div>
-
+-->s
     <script src="js/index.js"></script>
+<!--
     <script src="js/init.js"></script>
     <script src="js/costingList.js"></script>
+-->
   </body>
 </html>
