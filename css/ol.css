@@ -1,4 +1,5 @@
-.responsiveList {
+/*	CONTENTS LIST		*/
+.contentsList {
   position: relative;
   width: 100%;
   height: 400px;
@@ -9,12 +10,12 @@
   padding: 0;
 }
 
-.responsiveList > li {
+.contentsList > li {
   margin-left: 1.5em;
   flex-grow: 1;
 }
 
-.responsiveList::before {
+.contentsList::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -26,31 +27,31 @@
 }
 
 
-ol {
+ol.contentsList, ol.contentsList ol {
   counter-reset: item;
 }
-li {
+ol.contentsList li {
   counter-increment: item;
 }
-li::marker {
+ol.contentsList li::marker {
   content: counters(item, ".") " ";
 }
 
-ol {
+ol.contentsList {
   line-height: 2em;
   font-size: 1.5em;
   font-weight: bold;
 }
 
-ol > li {
+ol.contentsList > li {
   margin-top: 20px;
 }
 
-ol > li > ol > li {
+ol.contentsList > li > ol > li {
   margin-top: 0;
 }
 
-ol > li > ol {
+ol.contentsList > li > ol {
   font-size: 1em;
   font-weight: normal;
   color: hsl(0deg 0% 34%);
