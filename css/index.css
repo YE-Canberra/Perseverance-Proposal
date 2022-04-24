@@ -39,6 +39,7 @@
 
 a, a:visited {
   color: #1a0dab; /* Google's blue */
+ // text-decoration: none;
 }
 
 sup {
@@ -166,23 +167,42 @@ h1, p {
 
 .bannerBox {
   position: absolute;
-  align-items: flex-end;
+  align-items: flex-start;
   width: calc(100% - 40px);
   height: 200px;
-  top: calc(100% - 240px);
+  top: 0;calc(100% - 240px);
   left: 0;
   padding: 20px;
   opacity: 0.5;
 }
 
 .CDSCCBanner {
-  background-color: black;
+//463x60
+  filter: grayscale;
+}
+.NASABACK {
+  position: relative;
+  top: -15px;
+  width: 500px;
+  height: 120px;
+background-image: radial-gradient(black 30%, transparent 70%);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.YEBanner {
+  width: calc(0.75 * 300px); //300x140
+  filter: grayscale;
 }
 
 .page p {
   position: relative;
   width: 100%;
   text-align: justify;
+//  font-size: 1.5em;
+//  line-height: 2em;
   font-size: 1.2em;
   line-height: 1.5em;
 }
@@ -196,9 +216,26 @@ h1, p {
 }
 
 .grey {
+  margin: 0 0 0 auto;
   color: gray;
 }
 
 .asterisk {
   top: 1.8em;
+}
+
+#AppendixA h2 {
+  position: relative;
+}
+
+#AppendixA h2::before {
+  content: "";
+  width: calc(var(--page-width) - var(--page-padding) - 20px);
+  position: absolute;
+  top: -0.2em;
+  border: 1px solid black;
+}
+
+#AppendixA img {
+  width: 100%;
 }
