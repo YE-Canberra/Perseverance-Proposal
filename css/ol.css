@@ -1,4 +1,7 @@
-/*	CONTENTS LIST		*/
+/*
+	CONTENTS LIST	
+*/
+
 .contentsList {
   position: relative;
   width: 100%;
@@ -55,4 +58,15 @@ ol.contentsList > li > ol {
   font-size: 1em;
   font-weight: normal;
   color: hsl(0deg 0% 34%);
+}
+
+/*
+	PROJECT OUTLINE LISTS	
+*/
+.PO li {
+  line-height: 2em;
+}
+
+.PO ol > li > ol {
+  list-style-type: lower-alpha;
 }
