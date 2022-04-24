@@ -1,0 +1,116 @@
+.timeline {
+  position: relative;
+  margin: 0 auto;
+}
+.timeline > p {
+  position: relative;
+  width: 100%;
+  margin: -2px 0;
+  padding: var(--p-padding);
+  counter-increment: section;
+
+  font-size: 1.5em;
+}
+
+.timeline > p:nth-child(odd) {
+  background:
+    linear-gradient(to right, white 50%, white 50%) padding-box,
+    linear-gradient(to right, black 50%, transparent 60%) border-box;
+
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+
+  border-left: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+}
+.timeline > p:nth-child(even) {
+  text-align: right;
+  background:
+    linear-gradient(to right, white 50%, white 50%) padding-box,
+    linear-gradient(to left, black 50%, transparent 60%) border-box;
+
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+}
+
+.timeline > p:first-child {
+  border-top: 0;
+  background:
+    linear-gradient(to right, white 50%, white 50%) padding-box,
+    linear-gradient(8deg, black 15%, transparent 40%) border-box;
+}
+
+.timeline > p::before {
+  content: counter(section);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--number-bubble-size);
+  height: var(--number-bubble-size);
+  top: calc(0.5 * (var(--p-full-height) - var(--number-bubble-size)));
+  background-color: pink;
+  background-clip: content-box;
+  border-radius: 100px;
+  line-height: 1.25em;
+  font-size: 1em;
+  color: white;
+}
+
+.timeline > p:nth-child(odd)::before {
+  left: calc(-0.5 * var(--number-bubble-size));
+}
+
+.timeline > p:nth-child(even)::before {
+  right: calc(-0.5 * var(--number-bubble-size));
+}
+
+.hiddenDate {
+  top: calc(0.5 * (var(--p-full-height) - 1.5em) + 5em) !important;
+  opacity: 0 !important;
+}
+
+.timeline > p > span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  height: 1.5em;
+  top: calc(0.5 * (var(--p-full-height) - 1.5em));
+  opacity: 0.6;
+  transition: opacity 0.8s, top 0.8s;
+}
+
+.timeline > p:nth-child(odd) > span {
+  justify-content: flex-end;
+  text-align: right;
+  left: calc(-225px);
+}
+
+.timeline > p:nth-child(odd) > span:after {
+  position: absolute;
+  content: '';
+  font-size: 1.6em;
+  right: -1.5ch;
+  top: -8px;
+}
+
+.timeline > p:nth-child(even) > span {
+  justify-content: flex-start;
+  text-align: left;
+  right: calc(-225px);
+}
+
+.timeline > p:nth-child(even) > span:before {
+  position: absolute;
+  content: '';
+  font-size: 1.6em;
+  left: -1.5ch;
+  top: -8px;
+}
