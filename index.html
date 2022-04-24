@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="img/png" href="./res/img/YE-logo.png">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" href="./css/ol.css">
+    <link rel="stylesheet" type="text/css" href="./css/timeline.css">
+    <link rel="stylesheet" type="text/css" href="./css/costingList.css">
+    <script src="js/THREE/three.js"></script>
+    <script src="js/THREE/GLTFLoader.js"></script>
+    <script src="js/THREE/DRACOLoader.js"></script>
+    <script src="js/THREE/OrbitControls.js"></script>
+  </head>
+  <body>
+
+<!--
+<ul>
+  <li>Dynamic Price total and model changes</li>
+  <li>Expandable Price List</li>
+</ul>
+-->
+
+      <h1 class="title">Perseverance Proposal</h1>
+
+    <div class="page firstPage">
+      <div class="horizontalBox bannerBox">
+	<img class="banner CDSCCBanner" src="./res/img/CDSCC-banner.png">
+	<img class="banner" src="./res/img/YE-banner.png">
+      </div>
+      <div class="horizontalBox">
+	<h2>for <span class="name">Canberra Deep Space Communication Complex</span></h2>
+	<h2>by <span class="name">Young Engineers Canberra</span></h2>
+      </div>
+<br><br><br>
+	<ol class="responsiveList">
+	  <li><a href="#ExecutiveSummary">Executive Summary</a></li>
+	  <li><a href="#OurCompany">Our Company</a></li>
+	  <li><a href="#ProjectOutline">Project Outline</a>
+	    <ol>
+	      <li>Deliverables</li>
+	      <li>Manufacture</li>
+	      <li>Teaching</li>
+	      <li>Marketing & PR</li>
+	    </ol>
+	  </li>
+	  <li><a href="#Timeline">Timeline & Milestones</a></li>
+	  <li><a href="#Budget">Budget</a>
+	    <ol>
+	      <li>Manufacture</li>
+	      <li>Labour</li>
+	      <li>Marketing & PR</li>
+	    </ol>
+	  </li>
+	  <li><a href="#BeyondPerseverance">Beyond Perseverance</a></li>
+	</ol>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+    </div>
+
+    <div id="ExecutiveSummary" class="page">
+      <h1>Executive Summary</h1>
+    </div>
+
+    <div id="OurCompany" class="page">
+      <h1>Our Company</h1>
+    </div>
+
+    <div id="ProjectOutline" class="page">
+      <h1>Project Outline</h1>
+	<h2>Deliverables</h2>
+	<h2>Manufacture</h2>
+	<h2>Teaching</h2>
+	<h2>Marketing & PR</h2>
+    </div>
+
+    <div id="Timeline" class="page timelinePage">
+      <h1>Timeline</h1>
+      <div class="timeline">
+	<p><strong>Order</strong> Parts<span>10<sup>th</sup>- 15<sup>th</sup>May</span></p>
+	<p><strong>Recieve</strong> Parts<span>End of June</span></p>
+	<p>Assemble <strong>Working Model</strong><span>July</span></p>
+	<p>Finalise <strong>Lesson Plans</strong><span>July</span></p>
+	<p>Teach and Assemble with <strong>Student-Involvement</strong><span>Term 3 including Holidays</span></p>
+	<p><strong>Official Release</strong> at CDSCC<span>October</span></p>
+
+	<!-- color coded for assembly&teaching || PR&Marketing -->
+      </div>
+    </div>
+
+    <div id="Budget" class="page">
+      <h1>Budget</h1>
+	<h2>Manufacture</h2>
+
+      <table class="costingTable">
+	<tr>
+	  <td>Manufacture</td>
+<td></td>
+	</tr>
+	<tr>
+	  <td>&emsp;Perseverance</td>
+<td></td>
+	</tr>
+	<tr>
+	  <td>3D-Printed Parts</td>
+	  <td><span style="position:absolute; left:80%">$</span>13,000</td>
+	</tr>
+	<tr>
+	  <td>Electronics</td>
+	  <td>300</td>
+	</tr>
+	<tr>
+	  <td>Other Hardware</td>
+	  <td>1,500</td>
+	</tr>
+	<tr>
+	  <td>3D-Printed Parts</td>
+	  <td>13,000</td>
+	</tr>
+	<tr>
+	  <td>3D-Printed Parts</td>
+	  <td>13,000</td>
+	</tr>
+	<tr>
+	  <td>3D-Printed Parts</td>
+	  <td>13,000</td>
+	</tr>
+
+      </table>
+
+	<h2>Labour</h2>
+	<h2>Marketing & PR</h2>
+    </div>
+
+    <div id="BeyondPerseverance" class="page">
+      <h1>Beyond Perseverance</h1>
+<ul>
+<li>Our own Perseverance</li>
+<li>Blog for all</li>
+<li>We offer a course + affiliation with you guys</li>
+<li>Further collaboration</li>
+</ul>
+<h3>If there are any queries, we are open to discussion as to how we can make this possible.</h3>
+    </div>
+
+    <div class="page">
+      <div class="stage">
+	<canvas id="c"></canvas>
+      </div>
+      <table id="costingTable"></table>
+    </div>
+
+    <script src="js/index.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/costingList.js"></script>
+  </body>
+</html>
