@@ -1,0 +1,57 @@
+.responsiveList {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.responsiveList > li {
+  margin-left: 1.5em;
+  flex-grow: 1;
+}
+
+.responsiveList::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 0;
+  left: 0;
+  background-color: black;
+  border-radius: 30%;
+}
+
+
+ol {
+  counter-reset: item;
+}
+li {
+  counter-increment: item;
+}
+li::marker {
+  content: counters(item, ".") " ";
+}
+
+ol {
+  line-height: 2em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+ol > li {
+  margin-top: 20px;
+}
+
+ol > li > ol > li {
+  margin-top: 0;
+}
+
+ol > li > ol {
+  font-size: 1em;
+  font-weight: normal;
+  color: hsl(0deg 0% 34%);
+}
