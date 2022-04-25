@@ -6,6 +6,7 @@
 -->
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src *">
     <link rel="icon" type="img/png" href="./res/img/YE_logo.webp">
     <link rel="stylesheet" type="text/css" href="./css/splash.css">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
@@ -23,7 +24,11 @@
 -->
   </head>
   <body>
+    <div id="top"></div>
 
+    <a href="#top"><img class="toTop hiddenToTop" src="./res/to_top1.svg" alt="to top"></a>
+
+<div class=""></div>
     <div class="splash">
       <img src="./res/img/splash.png" alt="" draggable="false"/>
       <div class="horizontalBox">
@@ -35,11 +40,7 @@
     <h1 class="title">Perseverance Proposal</h1>
 
     <div class="page firstPage">
-      <div class="horizontalBox">
-	<h2>for <span class="name">Canberra Deep Space Communication Complex</span></h2>
-	<h2>by <span class="name">Young Engineers Canberra</span></h2>
-      </div>
-
+      <img src="./res/img/splash.png" alt="" draggable="false"/>
       <h1>Contents</h1>
       <div class="horizontalBox bannerBox">
 	<div class="NASABACK">
@@ -100,7 +101,7 @@
 
 
     <div id="Deliverables" class="page PO">
-      <h2 class="grey">Project Outline</h2>
+      <h1 class="grey">Project Outline</h1>
 	<h2>Deliverables</h2>
 	    <p>Detailed below are the project deliverables to agree on:</p>
 		<ol>
@@ -252,6 +253,12 @@
       <p>Our Marketing & PR plan is found in <a href="#AppendixA">Appendix A</a>. The extent to which it is pursued will determine its cost. In light of this, we have not included pricing for Marketing & PR here, instead it will be decided between YE CBR and CDSCC as a part of the approval of this proposal.</p>
     </div>
 
+    <div class="page">
+      <div class="stage">
+	<canvas id="c"></canvas>
+      </div>
+    </div>
+
     <div id="BeyondPerseverance" class="page">
       <h1>Beyond Perseverance</h1>
       <br><p>Below is a list of possibilities for future collaboration between YE CBR and CDSCC:</p>
@@ -270,14 +277,14 @@
 
     <div id="AppendixA" class="page">
 	<h1>Appendix A</h1>
-	<h2>This section contains a detailed marketing plan:</h2>
+	<p>This section contains a detailed marketing plan:</p>
 
 	<h2>Marketing Objectives</h2>
 	  <ol>
-	    <li>Building the awareness of new Mars Rover Replica within Australia</li>
-	    <li>Driving engagement and consideration</li>
-	    <li>Encourage conversions (enquiries/more information/visits/enroll for the program)</li>
-	    <li>Support the government policy of promoting stem studies within Australia</li>
+	    <li><p>Building the awareness of new Mars Rover Replica within Australia</p></li>
+	    <li><p>Driving engagement and consideration</p></li>
+	    <li><p>Encourage conversions (enquiries/more information/visits/enroll for the program)</p></li>
+	    <li><p>Support the government policy of promoting stem studies within Australia</p></li>
 	  </ol>
 	<h2>Target Audience</h2>
 	  <img src="./res/img/marketing_proposal/target_audience.webp" alt="" draggable="false" />
@@ -292,31 +299,31 @@
 	<h2>Funnelling the Audience to Drive Conversion</h2>
 	  <img src="./res/img/marketing_proposal/funnelling_audience.webp" alt="" draggable="false" />
 	<h2>Four-Phase Campaign</h2>
-	  <img src="./res/img/marketing_proposal/phases.webp" alt="" draggable="false" />
+	  <img src="./res/img/marketing_proposal/phases.png" alt="" draggable="false" />
 	<h2>Pre-Launch</h2>
 	  <ol>
-	    <li>Pre-launch need to planned at least 3 weeks prior to the launch to create maximum buzz for the launch event</li>
-	    <li>Recommended to have a series of content on social to create a curiosity and excitement  prior to the launch</li>
-	    <li>Invite Influencers to create short clips to create a buzz around the launch</li>
+	    <li><p>Pre-launch need to planned at least 3 weeks prior to the launch to create maximum buzz for the launch event</p></li>
+	    <li><p>Recommended to have a series of content on social to create a curiosity and excitement  prior to the launch</p></li>
+	    <li><p>Invite Influencers to create short clips to create a buzz around the launch</p></li>
 	  </ol>
 	<h2>Launch</h2>
 	  <ol>
-	    <li>Organize a press conference / get electronic, print and digital media to cover the launch</li>
-	    <li>Invite space influencers to share FB live updates on their feed</li>
-	    <li>Fb Live update on the Young Engineers page and NASA page</li>
-	    <li>Create content on social media to announce the launch of Mars Rover Replica and program module</li>
-	    <li>Run an early bird promotion to the schools to encourage more visits</li>
+	    <li><p>Organize a press conference / get electronic, print and digital media to cover the launch</p></li>
+	    <li><p>Invite space influencers to share FB live updates on their feed</p></li>
+	    <li><p>Fb Live update on the Young Engineers page and NASA page</p></li>
+	    <li><p>Create content on social media to announce the launch of Mars Rover Replica and program module</p></li>
+	    <li><p>Run an early bird promotion to the schools to encourage more visits</p></li>
 	  </ol>
 	<h2>Post Event Coverage</h2>
 	  <ol>
-	    <li>Issue PR articles to print and digital media to get the maximum free publicity for the event</li>
-	    <li>Invite influencers to share their experiences and reviews on social media  and invite others to visit and share their experience</li>
-	    <li>Share behind the scene video on YouTube create interest to visit</li>
+	    <li><p>Issue PR articles to print and digital media to get the maximum free publicity for the event</p></li>
+	    <li><p>Invite influencers to share their experiences and reviews on social media  and invite others to visit and share their experience</p></li>
+	    <li><p>Share behind the scene video on YouTube create interest to visit</p></li>
 	  </ol>
 	<h2>Brand Sustenance</h2>
 	  <ol>
-	    <li>Use social media to sustain the campaign for at least for 3 months to maintain top of mind awareness</li>
-	    <li>Retarget the interested audience via social media, LinkedIn and email to encourage visits and enroll for the program</li>
+	    <li><p>Use social media to sustain the campaign for at least for 3 months to maintain top of mind awareness</p></li>
+	    <li><p>Retarget the interested audience via social media, LinkedIn and email to encourage visits and enroll for the program</p></li>
 	  </ol>
     </div>
 	
@@ -326,11 +333,10 @@
 	<canvas id="c"></canvas>
       </div>
     </div>
--->s
-    <script src="js/index.js"></script>
-<!--
-    <script src="js/init.js"></script>
-    <script src="js/costingList.js"></script>
 -->
+    <script src="js/index.js"></script>
+
+    <script src="js/init.js"></script>
+
   </body>
 </html>
