@@ -2,6 +2,7 @@ const timelinePg = document.getElementsByClassName("timelinePage")[0];
 const dates = document.getElementsByClassName("timeline")[0].getElementsByTagName("span");
 const title = document.getElementsByClassName("title")[0];
 const body = document.body;
+const toTop = document.getElementsByClassName("toTop")[0];
 
 const maxLax = 100;
 const titleH = 50 + 16*2;
@@ -14,9 +15,11 @@ const parallaxScroll = () => {
   if (body.scrollTop < titleH) {
     if (document.getElementsByClassName("hiddenTitle").length) {
       title.classList.remove("hiddenTitle");
+      toTop.classList.add("hiddenToTop");
     }
   } else if (!document.getElementsByClassName("hiddenTitle").length) {
     title.classList.add("hiddenTitle");
+    toTop.classList.remove("hiddenToTop");
   }
 
   if (isInVertView(timelinePg, 300)) {
