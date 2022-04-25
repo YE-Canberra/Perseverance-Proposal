@@ -114,7 +114,8 @@ body {
 
 .firstPage {
   margin-top: calc(50px + 6em) !important;
-  padding-top: 100px !important;
+  padding-bottom: 200px !important;
+  padding-top: 50px !important;
 }
 
 .page {
@@ -168,10 +169,11 @@ h1, p {
 
 .bannerBox {
   position: absolute;
-  align-items: flex-start;
+//  align-items: flex-start;
+  align-items: flex-end;
   width: calc(100% - 40px);
   height: 200px;
-  top: 0;calc(100% - 240px);
+  top: calc(100% - 240px);
   left: 0;
   padding: 20px;
   opacity: 0.5;
@@ -224,6 +226,11 @@ h1, p {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+
+
+.page .imgBox > img {
+  width: 90%;
 }
 
 .grey {
