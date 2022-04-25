@@ -114,6 +114,7 @@ body {
 
 .firstPage {
   margin-top: calc(50px + 6em) !important;
+  padding-top: 100px !important;
 }
 
 .page {
