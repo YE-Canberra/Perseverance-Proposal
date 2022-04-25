@@ -29,6 +29,17 @@
   border-radius: 30%;
 }
 
+.contentsList::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -2em;
+  right: 0;
+  background-color: black;
+  border-radius: 30%;
+}
+
 
 ol.contentsList, ol.contentsList ol {
   counter-reset: item;
