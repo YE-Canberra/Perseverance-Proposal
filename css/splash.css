@@ -9,7 +9,7 @@
   z-index: 3;
   opacity: 1;
   background-image: radial-gradient(#ef9d6b 50%, #572e1a 100%);
-  transition: 0.6s;
+  transition: 0.8s;
 }
 
 .splash > img {
