@@ -1,0 +1,32 @@
+.splash {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  opacity: 1;
+  background-image: radial-gradient(#ef9d6b 50%, #572e1a 100%);
+  transition: 0.6s;
+}
+
+.splash > img {
+  width: 60vw;
+}
+
+.title {
+  z-index: 4;
+  text-shadow: 0 0 50px black !important;
+}
+
+.splash > .horizontalBox {
+  position: absolute;
+  align-items: flex-start;
+  width: 75%;
+  bottom: 5vh;
+}
+.splash > .horizontalBox > h2 {
+  text-shadow: 0 0 10px white !important;
+}
