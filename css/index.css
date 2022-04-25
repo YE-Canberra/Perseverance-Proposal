@@ -86,6 +86,20 @@ body {
   transition: background-position-y 0.1s;
 }
 
+#top {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+}
+
+.toTop {
+  position: fixed;
+  bottom: 0;
+  right: 12px;
+  width: calc(var(--page-edge) - var(--page-padding) - 12px);
+  transition: opacity 0.5s;
+}
+
 .title {
   position: fixed;
   width: 100%;
@@ -108,7 +122,7 @@ body {
   text-shadow: 0 0 10px black;
 }
 
-.hiddenTitle {
+.hiddenTitle, .hiddenToTop {
   opacity: 0;
 }
 
@@ -116,6 +130,13 @@ body {
   margin-top: calc(50px + 6em) !important;
   padding-bottom: 200px !important;
   padding-top: 50px !important;
+}
+
+.firstPage > img {
+  position: absolute;
+  top: 0;
+  left: auto;
+  height: 111px;
 }
 
 .page {
@@ -210,15 +231,35 @@ h1, p {
   position: relative;
   width: 100%;
   text-align: justify;
-//  font-size: 1.5em;
-//  line-height: 2em;
   font-size: 1.5rem;
   line-height: 1.5em;
 }
 
+.page h2 {
+  font-size: 1.75rem;
+  line-height: 1.75em;
+}
+
+.page h3 {
+  font-size: 1.5rem;
+  line-height: 1.5em;
+}
+
+#EducationProgram > ol {
+  margin: 0;
+}
+
 .page ol {
-    font-size: 1.2em;
-    line-height: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.firstPage > ol > li {
+  margin-bottom: auto !important;
+}
+
+.page > ol > li {
+  margin-bottom: 1em;
 }
 
 .page .imgBox {
@@ -243,8 +284,13 @@ h1, p {
   top: 1.8em;
 }
 
+#AppendixA > h1 {
+  margin-bottom: 1em;
+}
+
 #AppendixA h2 {
   position: relative;
+  margin-top: 4em;
 }
 
 #AppendixA h2::before {
@@ -256,5 +302,7 @@ h1, p {
 }
 
 #AppendixA img {
-  width: 100%;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
 }
