@@ -43,9 +43,9 @@ a, a:visited {
 }
 
 sup {
-  position: relative;
-  top: -0.5em;
-  margin-right: 1ch;
+//  position: relative;
+//  top: -0.5em;
+//  margin-right: 1ch;
 }
 
 #c {
@@ -176,25 +176,30 @@ h1, p {
   opacity: 0.5;
 }
 
-.CDSCCBanner {
-//463x60
+.YEBanner {
+/* size: 300x140 */
+  width: calc(0.75 * 300px);
   filter: grayscale;
+}
+.CDSCCBanner {
+/* size: 463x60 */
+  position: relative;
+  left: -25px;
 }
 .NASABACK {
   position: relative;
   top: -15px;
   width: 500px;
   height: 120px;
-background-image: radial-gradient(black 30%, transparent 70%);
+  background-image: radial-gradient(black 30%, transparent 70%);
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
 
-.YEBanner {
-  width: calc(0.75 * 300px); //300x140
-  filter: grayscale;
+::marker {
+  font-size: 1.5rem;
 }
 
 .page p {
@@ -203,8 +208,13 @@ background-image: radial-gradient(black 30%, transparent 70%);
   text-align: justify;
 //  font-size: 1.5em;
 //  line-height: 2em;
-  font-size: 1.2em;
+  font-size: 1.5rem;
   line-height: 1.5em;
+}
+
+.page ol {
+    font-size: 1.2em;
+    line-height: 1.5em;
 }
 
 .page .imgBox {
