@@ -6,8 +6,8 @@ const splash = () => {
     setTimeout(() => {
       document.getElementsByClassName("title")[0].style.zIndex = 0;
       splash.style.display = "none";
-    }, 400);
-  }, 1000);
+    }, 800);
+  }, 1800);
 };
 
 window.addEventListener("load", splash, {once: true});
