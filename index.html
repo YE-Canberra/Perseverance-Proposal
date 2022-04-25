@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--
+	PUT THIS IN THE EMAIL:
+	"If there are any queries, we are open to discussion as to how we can make this possible."
+-->
   <head>
     <meta charset="UTF-8">
     <link rel="icon" type="img/png" href="./res/img/YE_logo.webp">
+    <link rel="stylesheet" type="text/css" href="./css/splash.css">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <link rel="stylesheet" type="text/css" href="./css/ol.css">
     <link rel="stylesheet" type="text/css" href="./css/timeline.css">
     <link rel="stylesheet" type="text/css" href="./css/budget.css">
+    <script src="js/splash.js"></script>
     <script src="js/budget.js"></script>
 
-<!--
-
-PUT THIS IN THE EMAIL:
-	<h3>If there are any queries, we are open to discussion as to how we can make this possible.</h3>
-
+<!--	For 3D Models
     <script src="js/THREE/three.js"></script>
     <script src="js/THREE/GLTFLoader.js"></script>
     <script src="js/THREE/DRACOLoader.js"></script>
@@ -22,29 +24,30 @@ PUT THIS IN THE EMAIL:
   </head>
   <body>
 
-<!--
-<ul>
-  <li>Dynamic Price total and model changes</li>
-  <li>Expandable Price List</li>
-</ul>
--->
+    <div class="splash">
+      <img src="./res/img/splash.png" alt="" draggable="false"/>
+      <div class="horizontalBox">
+	<h2>by <span class="name">Young Engineers Canberra</span></h2>
+	<h2>for <span class="name">Canberra Deep Space Communication Complex</span></h2>
+      </div>
+    </div>
 
-      <h1 class="title">Perseverance Proposal</h1>
+    <h1 class="title">Perseverance Proposal</h1>
 
     <div class="page firstPage">
-      <h1>Contents</h1>
-      <div class="horizontalBox bannerBox">
-	<div class="NASABACK">
-	  <img class="banner CDSCCBanner" src="./res/img/CDSCC_banner.webp">
-        </div>
-	<img class="banner YEBanner" src="./res/img/YE_banner.webp">
-      </div>
-<!--
       <div class="horizontalBox">
 	<h2>for <span class="name">Canberra Deep Space Communication Complex</span></h2>
 	<h2>by <span class="name">Young Engineers Canberra</span></h2>
       </div>
--->
+
+      <h1>Contents</h1>
+      <div class="horizontalBox bannerBox">
+	<div class="NASABACK">
+	  <img class="banner CDSCCBanner" src="./res/img/CDSCC_banner.webp" draggable="false">
+        </div>
+	<img class="banner YEBanner" src="./res/img/YE_banner.webp" draggable="false">
+      </div>
+
 	<ol class="contentsList">
 	  <li><a href="#ExecutiveSummary">Executive Summary</a></li>
 	  <li><a href="#OurCompany">Our Company</a></li>
@@ -203,7 +206,7 @@ PUT THIS IN THE EMAIL:
 		    <li><p>Our Learning Philosophy</p>
 			<p>Young Engineers continuously strive to reimagine the ways our students can learn effectively through our programs. Whilst we teach our students the skills of the 21st Century, we recognize that our teaching delivery needs to constantly evolve and adapt to demands of the future to deliver our promise of learning. We firmly believe our students learning experience can be optimized by engaging in innovative inquiry-based learning endeavors. Our learning methodology as depicted below guide us through the process of discovering new knowledge or obtaining a deeper understanding of what we already know through experiential learning.</p>
 			<div class="imgBox">
-			  <img src="./res/img/learning_philosophy.webp" alt="Learning Philosophy Infographic: Imagine, Explore, Make, Think, Know"/>
+			  <img src="./res/img/learning_philosophy.webp" alt="Learning Philosophy Infographic: Imagine, Explore, Make, Think, Know" draggable="false"/>
 			</div>
 		    </li>
 		    <li><p>Program Delivery</p>
@@ -215,10 +218,6 @@ PUT THIS IN THE EMAIL:
       <h1 class="grey">Project Outline</h1>
 	<h2>Marketing & PR</h2>
 	<p>Our Marketing & PR plan can be found in <a href="#AppendixA">Appendix A</a>.</p>
-<!--
-<p>The Marketing & PR budget has not been allocated here. This is due to its dependence on budget.
-<br>Since these possibilities are very much dependent on the budget, further collaboration</p>
--->
     </div>
 
     <div id="Timeline" class="page timelinePage">
@@ -230,8 +229,6 @@ PUT THIS IN THE EMAIL:
 	<p>Finalise <strong>Lesson Plans</strong><span>July-August</span></p>
 	<p>Teach and Assemble with <strong>Student-Involvement</strong><span>August-October</span></p>
 	<p><strong>Launch</strong> at CDSCC<span>October</span></p>
-
-	<!-- color coded for assembly&teaching || PR&Marketing -->
       </div>
 	<p class="asterisk">*These dates are a guideline and are subject to approval</p>
     </div>
@@ -243,81 +240,16 @@ PUT THIS IN THE EMAIL:
 	<ol>
 	  <li><p>Budget Approval - by Mid-May</p></li>
 	  <li><p>Working Model</p></li>
-	  <li><p>Begin the Mechatronics Program</p></li>
-	  <li><p>Launch</p></li>
+	  <li><p>Being part of the Mechatronics Program</p></li>
+	  <li><p>Launch at CDSCC</p></li>
 	</ol>
     </div>
 
     <div id="Budget" class="page">
       <h1>Budget</h1>
-      <table class="budgetTable">
-<!--
-	<h2 id="BudgetManufacture">Manufacture</h2>
-	<tr class="budgetTitle">
-	  <td>Manufacture</td>
-	</tr>
-	<tr class="budgetSubtitle">
-	  <td>Perseverance</td>
-	</tr>
-	<tr class="pricedItem firstItem">
-	  <td>3D-Printed Parts*</td>
-	  <td>13,000</td>
-	</tr>
-	<tr class="pricedItem">
-	  <td>Electronics*</td>
-	  <td>300</td>
-	</tr>
-	<tr class="pricedItem">
-	  <td>Other Hardware*</td>
-	  <td>1,500</td>
-	</tr>
-	<tr class="pricedItem">
-	  <td>Extra Lights</td>
-	  <td>13,000</td>
-	</tr>
-	<tr class="pricedItem">
-	  <td>Accessories</td>
-	  <td>13,000</td>
-	</tr>
-	<tr class="subtotal">
-	  <td></td>
-	  <td>20,000</td>
-	</tr>
-
-	<tr class="budgetSubtitle">
-	  <td>Ingenuity</td>
-	</tr>
-	<tr class="pricedItem firstItem">
-	  <td>3D-Printed Parts*</td>
-	  <td>13,000</td>
-	</tr>
-	<tr class="pricedItem">
-	  <td>Electronics*</td>
-	  <td>300</td>
-	</tr>
-	<tr class="pricedItem">
-	  <td>Other Hardware*</td>
-	  <td>1,500</td>
-	</tr>
-	<tr class="pricedItem">
-	  <td>Accessories</td>
-	  <td>13,000</td>
-	</tr>
-	<tr class="subtotal">
-	  <td></td>
-	  <td>20,000</td>
-	</tr>
-
-	<tr class="total">
-	  <td>Manufacture Total</td>
-	  <td>30,000</td>
-	</tr>
-	<h2 id="BudgetLabour">Labour</h2>
--->
-      </table>
-
-	<h2 id="BudgetMarketing">Marketing & PR</h2>
-	<p>Our Marketing & PR plan is found in <a href="#AppendixA">Appendix A</a>. The extent to which it is pursued will determine its cost. In light of this, we have not included pricing for Marketing & PR here, instead it will be decided between YE CBR and CDSCC as a part of the approval of this proposal.</p>
+      <table class="budgetTable"></table>
+      <h2 id="BudgetMarketing">Marketing & PR</h2>
+      <p>Our Marketing & PR plan is found in <a href="#AppendixA">Appendix A</a>. The extent to which it is pursued will determine its cost. In light of this, we have not included pricing for Marketing & PR here, instead it will be decided between YE CBR and CDSCC as a part of the approval of this proposal.</p>
     </div>
 
     <div id="BeyondPerseverance" class="page">
@@ -348,19 +280,19 @@ PUT THIS IN THE EMAIL:
 	    <li>Support the government policy of promoting stem studies within Australia</li>
 	  </ol>
 	<h2>Target Audience</h2>
-	  <img src="./res/img/marketing_proposal/target_audience.webp" alt="" />
+	  <img src="./res/img/marketing_proposal/target_audience.webp" alt="" draggable="false" />
 	<h2>Daily Time Spent on Media by Audience</h2>
-	  <img src="./res/img/marketing_proposal/media_usage1.webp" alt="" />
+	  <img src="./res/img/marketing_proposal/media_usage1.webp" alt="" draggable="false" />
 	<h2>Digital Media Use by Audience</h2>
-	  <img src="./res/img/marketing_proposal/media_usage2.webp" alt="" />
+	  <img src="./res/img/marketing_proposal/media_usage2.webp" alt="" draggable="false" />
 	<h2>Media Objectives</h2>
-	  <img src="./res/img/marketing_proposal/media_objectives.webp" alt="" />
+	  <img src="./res/img/marketing_proposal/media_objectives.webp" alt="" draggable="false" />
 	<h2>Platform Selection</h2>
-	  <img src="./res/img/marketing_proposal/platform_selection.webp" alt="" />
+	  <img src="./res/img/marketing_proposal/platform_selection.webp" alt="" draggable="false" />
 	<h2>Funnelling the Audience to Drive Conversion</h2>
-	  <img src="./res/img/marketing_proposal/funnelling_audience.webp" alt="" />
+	  <img src="./res/img/marketing_proposal/funnelling_audience.webp" alt="" draggable="false" />
 	<h2>Four-Phase Campaign</h2>
-	  <img src="./res/img/marketing_proposal/phases.webp" alt="" />
+	  <img src="./res/img/marketing_proposal/phases.webp" alt="" draggable="false" />
 	<h2>Pre-Launch</h2>
 	  <ol>
 	    <li>Pre-launch need to planned at least 3 weeks prior to the launch to create maximum buzz for the launch event</li>
