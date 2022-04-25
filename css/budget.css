@@ -1,6 +1,7 @@
 table.budgetTable {
   position: relative;
   width: 100%;
+  margin-bottom: 2em;
 }
 
 table.budgetTable tr > td {
