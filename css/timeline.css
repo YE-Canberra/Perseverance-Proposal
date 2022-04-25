@@ -54,7 +54,7 @@
   width: var(--number-bubble-size);
   height: var(--number-bubble-size);
   top: calc(0.5 * (var(--p-full-height) - var(--number-bubble-size)));
-  background-color: pink;
+  background-color: #eb9054;
   background-clip: content-box;
   border-radius: 100px;
   line-height: 1.25em;
